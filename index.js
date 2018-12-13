@@ -1,6 +1,6 @@
 var httpProxy = require('http-proxy');
 
-var port = 8000;
+var port = process.env.PORT;
 
 var routing = {
   '/redirect': { port: 80, host: 'sb-heroku-proxy01.herokuapp.com' }
